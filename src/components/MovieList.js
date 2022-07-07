@@ -6,10 +6,9 @@ const MovieList = (props) => {
 	return (
 		<div className='box'>
 			{props.movies.map((movie, index) => (
-				<div key={movie.movieUUID} className='image-container'/*  d-flex justify-content-start m-3 */>
+				<div key={movie.movieUUID} className='image-container'>
 					<img src={`http://localhost:8083/posters/${movie.posterPath}`} alt='movie'  width='150' onClick={() => {
-						props.opendetail(movie.movieUUID) // get movie details
-						/* props.showTrailer(movie.movieUUID) */ // get movie trailer youtube link
+						props.opendetail(movie.movieUUID) 						
 					}}></img>
 					<p onClick={() => {
 						props.opendetail(movie.movieUUID)
@@ -22,23 +21,3 @@ const MovieList = (props) => {
 };
 export default MovieList;
 
-
-
-// import './Home.css';
-// import MovieListItem from './MovieListItem';
-
-// const MovieList = (props) => {
-
-// 	return (
-// 		<div className='box'>
-// 			{props.movies.map((movie, index) => (
-
-// 				<MovieListItem key={movie.movieUUID} movie={movie}
-// 					opendetail={props.openDetail}
-// 				/>
-// 			))}
-// 		</div>
-// 	);
-// };
-
-// export default MovieList;
