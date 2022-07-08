@@ -15,8 +15,9 @@ const App = () => {
 		if (!searchValue) {
 			return;
 		}
-		
-		const url = `http://localhost:8083/api/movies/getMoviesByTitleContaining/${searchValue}`;		
+		//https://filmstreamer.herokuapp.com/api/movies/movies
+		//const url = `http://localhost:8083/api/movies/getMoviesByTitleContaining/${searchValue}`;	
+		const url = `https://filmstreamer.herokuapp.com/api/movies/getMoviesByTitleContaining/${searchValue}`;		
 		const response = await fetch(url);
 		const responseJson = await response.json();
 
@@ -34,7 +35,8 @@ const App = () => {
 	}
 
 	const openDetail = (UUID) => {		
-		const api = `http://localhost:8083/api/movies/getMovie/${UUID}`;
+		//const api = `http://localhost:8083/api/movies/getMovie/${UUID}`;
+		const api = `https://filmstreamer.herokuapp.com/api/movies/getMovie/${UUID}`;
 		axios(api)
 			.then(res => res)
 			.then(data => {
