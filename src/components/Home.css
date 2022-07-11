@@ -37,7 +37,7 @@ body {
 
 .box {
 	display: grid;
-	grid-gap: 20px;
+	grid-gap: 5px;
 	color: #0a0a0a;
 	grid-template-columns: repeat(6, minmax(100px, 1fr));
   }
