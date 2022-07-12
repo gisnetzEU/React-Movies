@@ -46,8 +46,7 @@ const App = () => {
 
 	return (
 		<>
-			<div align="center">
-				<h1>Films</h1>
+			<div align="center">				
 			</div>
 			<div className='container' >
 				<div className='row d-flex align-items-center mt-4 mb-4' >					

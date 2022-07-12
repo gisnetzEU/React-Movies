@@ -78,8 +78,8 @@
 }
  .cover {
 	 position: absolute;
-	  top: 50px;
-	 /*left: 40px; */
+	  top: 20px;
+	 left: 65px;
 	 z-index: 2;
 }
  .details {
@@ -143,10 +143,10 @@
 	 background: #ddd;
 }
  .column2 {
-	 padding-left: 41px;
+	 padding-left: 10px;
 	 font-size: 14px;
 	 padding-top: 30px;
-	 margin-left: 13vw;
+	 margin-left: 5vw;
 	 width: 45vw;
 	 float: left;
 }
