@@ -14,9 +14,7 @@ const App = () => {
 	const getMovieRequest = async (searchValue) => {
 		if (!searchValue) {
 			return;
-		}
-		//https://filmstreamer.herokuapp.com/api/movies/movies
-		//const url = `http://localhost:8083/api/movies/getMoviesByTitleContaining/${searchValue}`;	
+		}		
 		const url = `https://filmstreamer.herokuapp.com/api/movies/getMoviesByTitleContaining/${searchValue}`;		
 		const response = await fetch(url);
 		const responseJson = await response.json();
@@ -34,8 +32,7 @@ const App = () => {
 		setSelected({});
 	}
 
-	const openDetail = (UUID) => {		
-		//const api = `http://localhost:8083/api/movies/getMovie/${UUID}`;
+	const openDetail = (UUID) => {				
 		const api = `https://filmstreamer.herokuapp.com/api/movies/getMovie/${UUID}`;
 		axios(api)
 			.then(res => res)
